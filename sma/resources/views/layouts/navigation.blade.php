@@ -100,7 +100,7 @@
             @endauth
 
             @guest
-            <!-- n buttons -->
+            <!-- new users will see navbar with login and register buttons -->
             <div class="mt-3 space-y-1">
                 <x-responsive-nav-link :href="route('login')">
                     {{ __('Login') }}
