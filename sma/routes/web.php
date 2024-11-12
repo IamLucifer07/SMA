@@ -19,10 +19,6 @@ Route::middleware('auth')->group(function () {
 });
 
 // API routes for social media data
-Route::get('/api/twitter-engagement/{userId}', [SocialMediaController::class, 'getTwitterEngagement'])
-    // ->middleware(['auth'])
-    ->name('api.twitter.engagement');
-
 Route::get('/api/facebook-engagement/{userId}', [SocialMediaController::class, 'getFacebookEngagement'])
     // ->middleware(['auth'])
     ->name('api.facebook.engagement');
