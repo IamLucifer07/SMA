@@ -18,6 +18,8 @@
                 </div>
             </div>
 
+
+
             <!-- Settings Dropdown for Authenticated Users -->
             @auth
             <div class="hidden sm:flex sm:items-center sm:ms-6">
