@@ -10,7 +10,6 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [SocialMediaController::class, 'index'])
     // ->middleware(['auth', 'verified'])
-    // ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
