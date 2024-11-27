@@ -31,7 +31,7 @@ class SocialMediaController extends Controller
     public function getFacebookEngagement(Request $request, $userId)
     {
         $timeRange = $request->query('timeRange', 'week');
-
+        $startDate = $this->getStartDate($timeRange);
 
         try {
             $data = FacebookData::where('user_id', $userId)
