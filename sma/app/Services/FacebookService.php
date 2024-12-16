@@ -18,5 +18,9 @@ class FacebookService
     }
 
     // function to get facebook posts
-
+    public function getPosts($pageId)
+    {
+        $response = $this->fb->get("/$pageId/posts", env('FACEBOOK_ACCESS_TOKEN'));
+        return $response->getDecodedBody();
+    }
 }
