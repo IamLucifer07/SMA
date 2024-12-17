@@ -5,6 +5,6 @@
 </head>
 <body>
     <h1>An error occurred while fetching Facebook data:</h1>
-    <p>{{ $error }}</p>
+
 </body>
 </html>
