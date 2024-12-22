@@ -21,6 +21,6 @@ Route::middleware('auth')->group(function () {
 // API routes for social media data
 Route::get('/api/facebook-engagement/{userId}', [SocialMediaController::class, 'getFacebookEngagement'])
     // ->middleware(['auth'])
-
+    ->name('api.facebook.engagement');
 
 require __DIR__ . '/auth.php';
