@@ -8,6 +8,8 @@ Route::get('/', function () {
     return redirect()->route('dashboard');
 });
 
+Route::view('/search', 'search-results');
+
 Route::get('/dashboard', [SocialMediaController::class, 'index'])
     // ->middleware(['auth', 'verified'])
     ->name('dashboard');
@@ -19,6 +21,7 @@ Route::middleware('auth')->group(function () {
 });
 
 // API routes for social media data
+
 Route::get('/api/facebook-engagement/{userId}', [SocialMediaController::class, 'getFacebookEngagement'])
     // ->middleware(['auth'])
     ->name('api.facebook.engagement');

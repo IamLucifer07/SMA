@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'facebook' => [
+        'app_id' => env('FACEBOOK_APP_ID'),
+        'app_secret' => env('FACEBOOK_APP_SECRET'),
+        'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
+        'default_graph_version' => env('FACEBOOK_DEFAULT_GRAPH_VERSION', 'v18.0'),
+    ],
 
 ];

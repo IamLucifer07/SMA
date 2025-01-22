@@ -14,15 +14,11 @@ class SocialMediaController extends Controller
      */
     public function index()
     {
-
+        // $twitterData = TwitterData::all();
         $facebookData = FacebookData::all();
 
-        return view('dashboard', compact('twitterData', 'facebookData'));
+        return view('dashboard', compact('facebookData'));
     }
-
-    /**
-     * Get Twitter engagement data for a specific user
-     */
 
 
     /**
